@@ -77,7 +77,7 @@
                 };
 
                 validBooks.Add(ourBook);
-                output.AppendLine($"Successfully imported book {ourBook.Name} for {ourBook.Price}.");
+                output.AppendLine($"Successfully imported book {ourBook.Name} for {ourBook.Price:F2}.");
             }
             context.Books.AddRange(validBooks);
             context.SaveChanges();
